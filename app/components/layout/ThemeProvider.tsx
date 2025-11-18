@@ -3,7 +3,7 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import { getTheme, setTheme } from '../../utils/theme';
 
-type Theme = 'light' | 'dark';
+type Theme = 'dark' | 'light';
 
 interface ThemeContextType {
   theme: Theme;
@@ -16,7 +16,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setThemeState] = useState<Theme>('light');
 
   useEffect(() => {
-    setThemeState(getTheme());
+    const detected = getTheme();
+    setThemeState(detected); // update React state
+    setTheme(detected);      // apply html class
   }, []);
 
   useEffect(() => {
