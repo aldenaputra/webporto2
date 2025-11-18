@@ -1,36 +1,142 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Professional Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS v4. Features dark/light mode toggle and a modular structure for easy content management.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Tech Stack**: Next.js 15, TypeScript, Tailwind CSS v4
+- **Dark/Light Mode**: Toggle with system preference detection
+- **Responsive Design**: Mobile-first approach
+- **Modular Structure**: Easy to customize and add new content
+- **SEO Optimized**: Built-in SEO best practices
+- **Fast Performance**: Optimized for Vercel deployment
+
+## 📁 Project Structure
+
+```
+portfolio_alden_new/
+├── app/
+│   ├── components/
+│   │   ├── layout/          # Layout components (Navigation, ThemeProvider)
+│   │   ├── sections/        # Page sections (Hero, About, Projects)
+│   │   └── ui/             # Reusable UI components
+│   ├── data/
+│   │   └── portfolioData.ts # Centralized content management
+│   ├── types/
+│   │   └── index.ts        # TypeScript interfaces
+│   └── utils/
+│       └── theme.ts        # Theme management utilities
+├── public/                 # Static assets
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Customization Guide
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. Update Personal Information
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Edit [`app/data/portfolioData.ts`](app/data/portfolioData.ts) to update:
 
-## Learn More
+- **Personal Details**: Name, title, description, email, location
+- **About Section**: Bio, career goals, skills, hobbies
+- **Projects**: Add/remove projects with STAR method descriptions
+- **Social Links**: GitHub, LinkedIn, etc.
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Add Your Photos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Place your images in the `public/` folder:
+- Professional headshot: `public/headshot.jpg`
+- Project screenshots: `public/project1-screenshot.jpg`, etc.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Update the image URLs in `portfolioData.ts`.
 
-## Deploy on Vercel
+### 3. Customize Colors & Styling
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Modify Tailwind classes in components or update the theme in `tailwind.config.js`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Deployment to Vercel
+
+### Quick Deploy
+
+1. **Push to GitHub**
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial portfolio"
+   git remote add origin https://github.com/yourusername/portfolio.git
+   git push -u origin main
+   ```
+
+2. **Deploy to Vercel**
+   - Go to [vercel.com](https://vercel.com)
+   - Import your GitHub repository
+   - Deploy with default settings
+
+### Manual Deploy
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel --prod
+```
+
+## 🛠️ Development
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+
+### Installation
+```bash
+cd portfolio_alden_new
+npm install
+```
+
+### Development Server
+```bash
+npm run dev
+```
+
+### Build
+```bash
+npm run build
+```
+
+### Preview
+```bash
+npm run start
+```
+
+## 📱 Responsive Design
+
+The website is fully responsive with breakpoints:
+- Mobile: < 768px
+- Tablet: 768px - 1024px
+- Desktop: > 1024px
+
+## 🎯 Content Management
+
+All content is managed through the `portfolioData.ts` file:
+
+- **Easy Updates**: Change text without touching components
+- **Modular Projects**: Add new projects by copying the template
+- **Skills Management**: Organize by categories
+- **STAR Method**: Structured project descriptions
+
+## 🔧 Technologies Used
+
+- **Frontend**: Next.js 15, React 19
+- **Styling**: Tailwind CSS v4
+- **Language**: TypeScript
+- **Icons**: Heroicons (via SVG)
+- **Deployment**: Vercel
+- **Linting**: ESLint
+
+## 📞 Support
+
+For questions or issues, please open an issue on GitHub or contact through your preferred method.
+
+## 📝 License
+
+MIT License - feel free to use this template for your own portfolio!
