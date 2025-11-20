@@ -77,7 +77,7 @@ export default function About() {
           {about.hobbies && about.hobbies.length > 0 && (
             <Card>
               <CardHeader>
-                <CardTitle>Interests & Hobbies</CardTitle>
+                <CardTitle>Domains</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">

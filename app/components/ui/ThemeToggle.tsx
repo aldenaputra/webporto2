@@ -1,9 +1,15 @@
 'use client';
 
 import { useTheme } from '../layout/ThemeProvider';
+import { useState, useEffect } from 'react';
 
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <button
@@ -11,7 +17,10 @@ export default function ThemeToggle() {
       className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
       aria-label="Toggle theme"
     >
-      {theme === 'light' ? (
+      {!mounted ? (
+
+        <div className="w-5 h-5" />
+      ) : theme === 'light' ? (
         <svg
           className="w-5 h-5 text-gray-600 dark:text-gray-300"
           fill="none"

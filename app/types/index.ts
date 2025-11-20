@@ -19,6 +19,17 @@ export interface Skill {
   category: string;
 }
 
+export interface EducationItem {
+  id: number;
+  level: string;
+  school: string;
+  degree: string;
+  duration: string;
+  achievements: string[];
+  gpa?: string;
+  getdotcolor: string;
+}
+
 export interface PortfolioData {
   personal: {
     url: string;
@@ -37,6 +48,7 @@ export interface PortfolioData {
     hobbies?: string[];
   };
   projects: Project[];
+  education: EducationItem[];
   socialLinks: {
     github: string;
     linkedin: string;

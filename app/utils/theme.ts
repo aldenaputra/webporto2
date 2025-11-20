@@ -1,6 +1,6 @@
 'use client';
 
-export function setTheme(theme: 'light' | 'dark') {
+export const setTheme = (theme: 'light' | 'dark') => {
   if (typeof window === 'undefined') return;
 
   localStorage.setItem('theme', theme);
@@ -10,23 +10,22 @@ export function setTheme(theme: 'light' | 'dark') {
   } else {
     document.documentElement.classList.remove('dark');
   }
-}
+};
 
-export function getTheme(): 'light' | 'dark' {
-  if (typeof window === 'undefined') return 'dark';
+export const getTheme = (): 'light' | 'dark' => {
+  if (typeof window === 'undefined') return 'light';
 
-  const stored = localStorage.getItem('theme');
-  if (stored === 'light' || stored === 'dark') return stored;
+  const saved = localStorage.getItem('theme');
+  if (saved === 'light' || saved === 'dark') return saved;
 
-  // Default to dark mode, but respect system preference if user hasn't set one
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const systemPreference = prefersDark ? 'dark' : 'light';
-  
-  // If no stored preference, default to dark mode
-  return 'dark';
-}
+  return prefersDark ? 'dark' : 'light';
+};
 
-export const initTheme = () => {
-  const theme = getTheme();
-  setTheme(theme);
+export const toggleTheme = () => {
+  if (typeof window === 'undefined') return;
+  
+  const current = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+  const newTheme = current === 'light' ? 'dark' : 'light';
+  setTheme(newTheme);
 };

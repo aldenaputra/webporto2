@@ -6,9 +6,9 @@ export const portfolioData: PortfolioData = {
     name: "Hi, I'm Alden!",
     title: "Computer Science Master's Student",
     description: "Bridging data science, analytics, and engineering with a growing emphasis on safeguarding information systems.",
-    email: "your.email@example.com",
-    location: "Your Location",
-    headshotUrl: "/placeholder-headshot.jpg"
+    email: "alden.aputra@gmail.com",
+    location: "Jakarta, Indonesia",
+    headshotUrl: "/pic2.png"
   },
 
   about: {
@@ -30,10 +30,9 @@ export const portfolioData: PortfolioData = {
     ],
     cvUrl: "https://drive.google.com/file/d/YOUR_CV_ID/view?usp=sharing",
     hobbies: [
-      "Photography",
-      "Reading",
-      "Traveling",
-      "Open Source Contributing"
+      "Financial Services and Investment",
+      "Risk Management",
+      "Human Resource Information Systems"      
     ]
   },
 
@@ -64,7 +63,7 @@ export const portfolioData: PortfolioData = {
       driveUrl: "https://drive.google.com/drive/folders/YOUR_FOLDER_ID",
       imageUrl: "/project2-screenshot.jpg"
     },
-        {
+    {
       id: "3",
       title: "Project Name 2",
       description: "Brief overview of the second project",
@@ -78,6 +77,40 @@ export const portfolioData: PortfolioData = {
       imageUrl: "/project2-screenshot.jpg"
     }
   ],
+
+  education: [
+    {
+      id: 1,
+      level: 'High School Diploma',
+      school: 'SMA Regina Pacis Bogor',
+      degree: 'Math & Natural Science Major',
+      duration: 'Jul 2018 - Jul 2021',
+      achievements: ['Best Male Student', 'Youth Science Club'],
+      gpa: '93.47/100',
+      getdotcolor: 'blue-500',
+    },
+    {
+      id: 2,
+      level: "Bachelor's Degree",
+      school: 'BINUS University',
+      degree: 'Computer Science: Database Technology Streaming',
+      duration: 'Sept 2021 - Aug 2025',
+      achievements: ['Summa Cum Laude', 'Outstanding Graduate'],
+      gpa: '3.92/4.0',
+      getdotcolor: 'violet-500',
+    },
+    {
+      id: 3,
+      level: "Master's Degree",
+      school: 'BINUS Graduate Program',
+      degree: 'Magister Teknik Informatika - Fast Track Programme: Information Security Management Streaming',
+      duration: 'Sept 2024 - Aug 2026',
+      achievements: ['Ongoing study, graduation expected in August 2026'],
+      gpa: '4.0/4.0 (Current)',
+      getdotcolor: 'fuchsia-600',
+    },
+  ],
+
   socialLinks: {
     github: "https://github.com/yourusername",
     linkedin: "https://linkedin.com/in/yourusername",
