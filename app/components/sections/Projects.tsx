@@ -13,7 +13,7 @@ function ProjectCard({ project }: ProjectCardProps) {
     <Card className="h-full flex flex-col">
       <CardHeader>
         <div className="aspect-video bg-gray-200 dark:bg-gray-700 rounded-lg mb-4 flex items-center justify-center">
-          <span className="text-gray-500 dark:text-gray-400">Project Screenshot</span>
+          <img src={project.imageUrl} alt={project.title} className="object-cover w-full h-full rounded-lg" />
         </div>
         <CardTitle>{project.title}</CardTitle>
         <p className="text-gray-600 dark:text-gray-300 mt-2">{project.description}</p>
@@ -22,29 +22,7 @@ function ProjectCard({ project }: ProjectCardProps) {
       <CardContent className="grow">
         <div className="space-y-4">
           <div>
-            <h4 className="font-semibold text-gray-900 dark:text-white mb-2">STAR Method</h4>
-            <div className="space-y-2 text-sm">
-              <div>
-                <strong className="text-blue-600 dark:text-blue-400">Situation:</strong>
-                <p className="text-gray-600 dark:text-gray-300">{project.situation}</p>
-              </div>
-              <div>
-                <strong className="text-blue-600 dark:text-blue-400">Task:</strong>
-                <p className="text-gray-600 dark:text-gray-300">{project.task}</p>
-              </div>
-              <div>
-                <strong className="text-blue-600 dark:text-blue-400">Action:</strong>
-                <p className="text-gray-600 dark:text-gray-300">{project.action}</p>
-              </div>
-              <div>
-                <strong className="text-blue-600 dark:text-blue-400">Result:</strong>
-                <p className="text-gray-600 dark:text-gray-300">{project.result}</p>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Technologies Used</h4>
+            <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Tools Used:</h4>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech, index) => (
                 <span
@@ -106,8 +84,8 @@ export default function Projects() {
   return (
     <Section id="projects" background="white">
       <SectionHeader 
-        title="Projects & Experience" 
-        subtitle="Explore my work and see how I've applied my skills to solve real-world problems"
+        title="Projects" 
+        subtitle="Explore my work outside professional experiences and see how I've applied my skills to solve real-world problems. This section highlights projects done independently or as part of my learning journey."
       />
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">

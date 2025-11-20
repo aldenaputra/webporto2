@@ -52,13 +52,12 @@ export default function Education() {
             My learning journey from high school through master's degree.
           </p>
         </div>
-
         {/* Desktop: Horizontal Timeline */}
         <div className="hidden lg:block">
-          <div className="relative pt-12 pb-4">                        
+          <div className="relative pb-4">                        
             <div className="relative flex justify-between items-start gap-4">
               {/* Vertical timeline line */}
-              <div className="absolute top-2 left-1/6 right-1/6 h-1 bg-linear-to-r from-blue-500 to-fuchsia-600"></div>
+              <div className="absolute top-2 left-1/6 right-1/6 h-1 bg-linear-to-r from-blue-500 to-fuchsia-600 rounded"></div>
               {educationData.map((item, index) => (
                 <div
                   key={item.id}

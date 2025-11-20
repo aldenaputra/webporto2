@@ -8,11 +8,11 @@ export default function Hero() {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center bg-linear-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[40%_60%] gap-12">
 
           {/* Profile Picture */}
-          <div className="flex justify-center">
-              <div className="relative">
+          <div className="flex justify-center lg:justify-end items-center">
+            <div className="relative">
               <div className="w-80 h-80 md:w-96 md:h-96 rounded-full bg-linear-to-r from-blue-400 to-purple-500 p-1">
                 <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 p-4">
                   <div className="w-full h-full rounded-full overflow-hidden bg-linear-to-r from-blue-100 to-purple-100 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center">
@@ -24,7 +24,7 @@ export default function Hero() {
           </div>
 
           {/* Introduction Text */}
-          <div className="text-center lg:text-left">
+          <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6">
               {personal.name}
             </h1>
