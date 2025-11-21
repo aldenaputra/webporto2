@@ -55,7 +55,7 @@ export const portfolioData: PortfolioData = {
       { name: "SQL (Advanced) by HackerRank" },
       { name: "SAP Analytics Cloud Training by ASEAN DSE" },
     ],
-    cvUrl: "https://drive.google.com/file/d/YOUR_CV_ID/view?usp=sharing",
+    cvUrl: "/Alden Ardiwinata Putra ATS CV.pdf",
     // domainsOfInterest: [
     //   "Data Science",
     //   "Data Analytics",
@@ -202,6 +202,13 @@ export const portfolioData: PortfolioData = {
       achievements: ['Best Male Student', 'Youth Science Club'],
       gpa: '93.47/100',
       getdotcolor: 'blue-500',
+      activities: [
+        'Regina Pacis Youth Science Club Former Chairman',
+        'Regina Pacis Band & Orchestra',
+        'OSN Astronomi',
+        'Lomba Karya Ilmiah Remaja LIPI 2019',
+        'National Folklore Festival FEB Universitas Indonesia Choir Competition Silver Medalist'
+      ]
     },
     {
       id: 2,
@@ -212,6 +219,22 @@ export const portfolioData: PortfolioData = {
       achievements: ['Summa Cum Laude', 'Outstanding Graduate'],
       gpa: '3.92/4.0',
       getdotcolor: 'violet-500',
+      activities: [
+        'Teaching & Mentoring',
+        'Band',
+        'Teach for Indonesia (Social Volunteer): Social Awareness Campaign at Lentera School Indonesia'
+      ],
+      courses: [
+        { name: 'Artificial Intelligence', code: 'COMP6065001' },
+        { name: 'Big Data Processing', code: 'COMP6579001' },
+        { name: 'Computer Networks', code: 'CPEN6247001' },
+        { name: 'Data Mining', code: 'COMP6140001' },
+        { name: 'Database Design', code: 'COMP6481001' },
+        { name: 'Database Technology', code: 'COMP6799001' },
+        { name: 'Distributed Cloud Computing', code: 'COMP6710001' },
+        { name: 'Geographical Information System', code: 'COMP6590001' },
+        { name: 'Scientific Computing', code: 'MATH183001' }
+      ]
     },
     {
       id: 3,
@@ -222,6 +245,18 @@ export const portfolioData: PortfolioData = {
       achievements: ['Ongoing study, graduation expected in August 2026'],
       gpa: '4.0/4.0 (Current)',
       getdotcolor: 'fuchsia-600',
+      volunteering: [
+        'Social Volunteer, English Teacher collaborating with myfundaction',
+        'Teaching Volunteer about AI and Digital Marketing by Bina Nusantara Computer Club in Massive Online Open Course format'
+      ],
+      courses: [
+        { name: 'Cases on Forensic Accounting and Corporate Governance', code: 'ACCT8008044' },
+        { name: 'Enterprise Network', code: 'CPEN8006041' },
+        { name: 'Fundamental of Cybersecurity', code: 'COMP8046041' },
+        { name: 'IT Risk Management and Audit', code: 'COMP8042041' },
+        { name: 'Network and Cyber Security', code: 'CPEN8005041' },
+        { name: 'Internet of Things (IoT)', code: 'COMP8041041' }
+      ]
     },
   ],
 

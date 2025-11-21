@@ -36,11 +36,11 @@ export default function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button 
-                href="#projects" 
+                href="#workexperience" 
                 size="lg"
                 className="w-full sm:w-auto"
               >
-                View My Work
+                View Experiences
               </Button>
               <Button 
                 href="#about" 

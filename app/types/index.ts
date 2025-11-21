@@ -32,6 +32,9 @@ export interface EducationItem {
   achievements: string[];
   gpa?: string;
   getdotcolor: string;
+  courses?: { name: string; code: string }[];
+  activities?: string[];
+  volunteering?: string[];
 }
 
 export interface WorkExperience {
