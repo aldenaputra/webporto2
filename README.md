@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS v4. Features dark/light mode toggle and a modular structure for easy content management.
 
-## 🚀 Features
+## Features
 
 - **Modern Tech Stack**: Next.js 15, TypeScript, Tailwind CSS v4
 - **Dark/Light Mode**: Toggle with system preference detection
@@ -11,7 +11,7 @@ A modern, responsive portfolio website built with Next.js 15, TypeScript, and Ta
 - **SEO Optimized**: Built-in SEO best practices
 - **Fast Performance**: Optimized for Vercel deployment
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 portfolio_alden_new/
@@ -30,7 +30,7 @@ portfolio_alden_new/
 └── README.md
 ```
 
-## 🎨 Customization Guide
+## Customization Guide
 
 ### 1. Update Personal Information
 
@@ -53,7 +53,7 @@ Update the image URLs in `portfolioData.ts`.
 
 Modify Tailwind classes in components or update the theme in `tailwind.config.js`.
 
-## 🚀 Deployment to Vercel
+## Deployment to Vercel
 
 ### Quick Deploy
 
@@ -81,7 +81,7 @@ npm i -g vercel
 vercel --prod
 ```
 
-## 🛠️ Development
+## Development
 
 ### Prerequisites
 - Node.js 18+
@@ -108,35 +108,17 @@ npm run build
 npm run start
 ```
 
-## 📱 Responsive Design
+## Responsive Design
 
 The website is fully responsive with breakpoints:
 - Mobile: < 768px
 - Tablet: 768px - 1024px
 - Desktop: > 1024px
 
-## 🎯 Content Management
+## Content Management
 
 All content is managed through the `portfolioData.ts` file:
 
 - **Easy Updates**: Change text without touching components
 - **Modular Projects**: Add new projects by copying the template
 - **Skills Management**: Organize by categories
-- **STAR Method**: Structured project descriptions
-
-## 🔧 Technologies Used
-
-- **Frontend**: Next.js 15, React 19
-- **Styling**: Tailwind CSS v4
-- **Language**: TypeScript
-- **Icons**: Heroicons (via SVG)
-- **Deployment**: Vercel
-- **Linting**: ESLint
-
-## 📞 Support
-
-For questions or issues, please open an issue on GitHub or contact through your preferred method.
-
-## 📝 License
-
-MIT License - feel free to use this template for your own portfolio!

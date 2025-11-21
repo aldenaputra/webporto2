@@ -97,12 +97,22 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-800 dark:border-gray-700 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
               {/* © {currentYear} */} Alden Ardiwinata Putra's Portfolio Website
             </p>
-            <p className="text-gray-400 text-sm mt-2 md:mt-0">
+            <p className="text-gray-400 text-sm">
               Built with Next.js & Tailwind CSS
+            </p>
+            <p className="text-gray-400 text-sm">
+              <a 
+                href="https://github.com/aldenaputra/webporto2.git" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white transition-colors underline"
+              >
+                View Repository on GitHub
+              </a>
             </p>
           </div>
         </div>
