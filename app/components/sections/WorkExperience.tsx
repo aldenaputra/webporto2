@@ -116,13 +116,11 @@ export default function WorkExperience() {
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-4-6l6 6m0 0l-6 6m6-6H4"
-                          />
+                          <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
                       </a>
                     </div>
