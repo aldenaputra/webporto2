@@ -82,32 +82,34 @@ export default function Education() {
                     onMouseEnter={() => setHoveredCard(index)}
                     onMouseLeave={() => setHoveredCard(null)}
                   >
-                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 w-full transform hover:scale-105 transition-transform">
-                      <div className="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-1">
-                        {item.level}
-                      </div>
-                      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
-                        {item.school}
-                      </h3>
-                      <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
-                        {item.degree}
-                      </p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
-                        {item.duration}
-                      </p>
-                      {item.gpa && (
-                        <p className="text-sm font-medium text-green-600 dark:text-green-400 mb-3">
-                          Grade: {item.gpa}
+                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 w-full transform hover:scale-105 transition-transform h-65 flex flex-col overflow-hidden">
+                      <div className="overflow-y-auto flex-1 pr-2">
+                        <div className="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-1">
+                          {item.level}
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
+                          {item.school}
+                        </h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
+                          {item.degree}
                         </p>
-                      )}
-                      <ul className="text-sm text-gray-600 dark:text-gray-300 space-y-1">
-                        {item.achievements.map((achievement, idx) => (
-                          <li key={idx} className="flex items-start">
-                            <span className="text-blue-500 mr-2">•</span>
-                            {achievement}
-                          </li>
-                        ))}
-                      </ul>
+                        <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
+                          {item.duration}
+                        </p>
+                        {item.gpa && (
+                          <p className="text-sm font-medium text-green-600 dark:text-green-400 mb-3">
+                            Grade: {item.gpa}
+                          </p>
+                        )}
+                        <ul className="text-sm text-gray-600 dark:text-gray-300 space-y-1">
+                          {item.achievements.map((achievement, idx) => (
+                            <li key={idx} className="flex items-start">
+                              <span className="text-blue-500 mr-2">•</span>
+                              {achievement}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
 
                     {/* Hover Card - Desktop */}
@@ -181,7 +183,7 @@ export default function Education() {
               >
                 <button
                   onClick={() => setExpandedMobile(expandedMobile === index ? null : index)}
-                  className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-lg p-5 text-left hover:shadow-xl transition-shadow"
+                  className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-lg p-5 text-left hover:shadow-xl transition-shadow max-h-72 overflow-y-auto"
                 >
                   <div className="flex justify-between items-start">
                     <div className="flex-1">

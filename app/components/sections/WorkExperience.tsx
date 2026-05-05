@@ -73,7 +73,7 @@ export default function WorkExperience() {
                   </div>
 
                   {/* Content Section */}
-                  <div className="lg:w-2/3 p-6 md:p-8 flex flex-col justify-between">
+                  <div className="lg:w-2/3 p-6 md:p-8 flex flex-col justify-center">
                     {/* Job Title and Description */}
                     <div>
                       <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-3">
@@ -104,7 +104,7 @@ export default function WorkExperience() {
                       </div>
 
                       {/* Link Button */}
-                      <a
+                      {/* <a
                         href={experience.link}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -122,7 +122,7 @@ export default function WorkExperience() {
                         >
                           <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>

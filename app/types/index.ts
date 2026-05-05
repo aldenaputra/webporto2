@@ -9,6 +9,17 @@ export interface Project {
   driveUrl?: string;
 }
 
+export interface Publication {
+  id: string;
+  title: string;
+  description: string;
+  technologies: string[];
+  imageUrl?: string;
+  githubUrl?: string;
+  demoUrl?: string;
+  driveUrl?: string;
+}
+
 export interface Skill {
   name: string;
   level: 'Beginner' | 'Intermediate' | 'Advanced' | 'Expert';
@@ -66,6 +77,7 @@ export interface PortfolioData {
     domainsOfInterest?: string[];
   };
   projects: Project[];
+  publications: Publication[];
   education: EducationItem[];
   workExperiences: WorkExperience[];
   socialLinks: {

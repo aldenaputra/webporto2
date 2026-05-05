@@ -33,6 +33,9 @@ export default function Navigation() {
             <a href="#workexperience" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               Experience
             </a>
+            <a href="#publications" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              Publications
+            </a>
             <a href="#projects" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               Projects
             </a>
@@ -70,6 +73,9 @@ export default function Navigation() {
             </a>
             <a href="#workexperience" onClick={() => setIsMenuOpen(false)} className="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               Experience
+            </a>
+            <a href="#publications" onClick={() => setIsMenuOpen(false)} className="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              Publications
             </a>
             <a href="#projects" onClick={() => setIsMenuOpen(false)} className="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               Projects

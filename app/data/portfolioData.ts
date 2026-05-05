@@ -4,16 +4,16 @@ export const portfolioData: PortfolioData = {
   personal: {
     url: "/pic2.png",
     name: "Hi, I'm Alden!",
-    title: "Computer Science Master's Student at BINUS University",
-    description: "Bridging data science, analytics, and engineering with a growing emphasis on safeguarding information systems.",
+    title: "Master's in Computer Science",
+    description: "Bridging data science, analytics, and engineering with security-aware data practices.",
     email: "alden.aputra@gmail.com",
     location: "Jakarta, Indonesia",
     headshotUrl: "/pic2.png"
   },
 
   about: {
-    bio: "I’m a final-year Fast-Track Computer Science student specializing in Information Security Management, supported by a strong analytics and data-driven foundation from my bachelor’s in Database Technology. Across my internships as an HR Data Scientist and Reporting Analyst, I’ve built end-to-end dashboards, developed predictive models, streamlined reporting workflows, and translated complex SQL/HiveQL logic into efficient DAX expressions. I also contributed to risk-monitoring models and data governance initiatives, giving me hands-on experience across analytics, business intelligence, and scalable data solutions.",
-    bio2: "Beyond my technical work, I’m someone who thrives on curiosity, creativity, and continuous improvement. I enjoy building data and IT security solutions, exploring new technologies, and expressing myself through music and art. I’m adaptable, collaborative, and driven by the desire to create meaningful work—whether it’s solving analytical challenges, safeguarding information systems, or contributing to impactful projects that help people and organizations make better decisions.",
+    bio: "I’m a Computer Science graduate with a Bachelor’s specialization in Database Technology and a Master’s specialization in Information Security Management, currently awaiting graduation. My background sits at the intersection of analytics, business intelligence, data operations, and security-aware information management. Across roles as an HR Data Scientist, Reporting Analyst, and Data Analyst, I’ve built dashboards, developed predictive models, automated reporting workflows, translated SQL/HiveQL logic into DAX, supported risk-monitoring dashboards, and improved operational data processes across financial services and logistics environments.",
+    bio2: "Beyond my technical work, I’m someone who thrives on curiosity, creativity, and continuous improvement. I enjoy building data and IT security solutions, exploring new technologies, and expressing myself through music and art. I’m adaptable, collaborative, and driven by the desire to create meaningful work, whether it’s solving analytical challenges, safeguarding information systems, or contributing to impactful projects that help people and organizations make better decisions.",
     skills: [
       { name: "JavaScript", level: "Advanced", category: "Frontend" },
       { name: "TypeScript", level: "Advanced", category: "Frontend" },
@@ -32,9 +32,12 @@ export const portfolioData: PortfolioData = {
       { skill: "Power BI" },
       { skill: "DAX" },
       { skill: "Data Engineering" },
+      { skill: "Linux/Bash" },
+      { skill: "Automation" },
       { skill: "SQL" },
       { skill: "Apache Spark" },
       { skill: "Excel" },
+      { skill: "Google Sheets" },
       { skill: "Hadoop" },
       { skill: "Reporting and Analysis" },
       { skill: "Data Governance" },
@@ -55,7 +58,7 @@ export const portfolioData: PortfolioData = {
       { name: "SQL (Advanced) by HackerRank" },
       { name: "SAP Analytics Cloud Training by ASEAN DSE" },
     ],
-    cvUrl: "/Alden Ardiwinata Putra ATS CV.pdf",
+    cvUrl: "/CV Alden ATS Mei 2026.pdf",
     // domainsOfInterest: [
     //   "Data Science",
     //   "Data Analytics",
@@ -182,12 +185,23 @@ export const portfolioData: PortfolioData = {
       driveUrl: "https://binusianorg-my.sharepoint.com/personal/alden_putra_binus_ac_id/_layouts/15/guestaccess.aspx?share=EW2O2MDH3w1Nofp_3QBWyzsBNHT_M0GTICEKxs568-y1Bg&e=z31jAs",
       imageUrl: "/cn.png"
     },
+  ],
+
+  publications: [
     {
-      id: "15",
+      id: "1",
+      title: "Practical Uncertainty Estimation for IHSG Forecasting Using Deep Ensembles, Residual-Based Intervals, and Evidential Regression",
+      description: "Part of my thesis publication, which, in this paper I explored existing vs. novel-proposed practical uncertainty quantification for Indonesian stock exchange forecasting. Accepted and presented in the 2026 International Seminar on Intelligent Business and Edge-Computing Research (ISIBER).",
+      technologies: ["Research", "Mendeley", "Deep Learning", "Uncertainty Quantification", "Stock Market Forecasting"],
+      driveUrl: "https://doi.org/10.1109/ISIBER68248.2026.11470012",
+      imageUrl: "/thesis_pub.png"
+    },
+    {
+      id: "2",
       title: "Systematic Literature Review on IT Strategic Workspaces: Approach to Develop an Ideal Environment",
       description: "Conducted a SLR research (first author) regarding IT workspaces in order to find tangible metrics and method to develop an ideal environment for IT human resources. Accepted and presented in The 9th International Conference on Computing, Engineering and Design (ICCED 2023).",
-      technologies: ["Research", "Mendeley", "Systematic Literature Review"],
-      driveUrl: "https://aldenisius.notion.site/Research-Paper-SLR-8fd20ca95e6342cfaedd44daebe983a3?pvs=4",
+      technologies: ["Research", "Mendeley", "Systematic Literature Review", "IT Workspaces", "Information Systems"],
+      driveUrl: "https://doi.org/10.1109/ICCED60214.2023.10425467",
       imageUrl: "/rmcs.png"
     },
   ],
@@ -200,7 +214,7 @@ export const portfolioData: PortfolioData = {
       degree: 'Math & Natural Science Major',
       duration: 'Jul 2018 - Jul 2021',
       achievements: ['Best Male Student', 'Youth Science Club'],
-      gpa: '93.47/100',
+      gpa: '93.47/100.00',
       getdotcolor: 'blue-500',
       activities: [
         'Regina Pacis Youth Science Club Former Chairman',
@@ -217,7 +231,7 @@ export const portfolioData: PortfolioData = {
       degree: 'Computer Science: Database Technology Streaming',
       duration: 'Sept 2021 - Aug 2025',
       achievements: ['Summa Cum Laude', 'Outstanding Graduate'],
-      gpa: '3.92/4.0',
+      gpa: '3.92/4.00',
       getdotcolor: 'violet-500',
       activities: [
         'Teaching & Mentoring',
@@ -242,8 +256,8 @@ export const portfolioData: PortfolioData = {
       school: 'BINUS Graduate Program',
       degree: 'Magister Teknik Informatika - Fast Track Programme: Information Security Management Streaming',
       duration: 'Sept 2024 - Aug 2026',
-      achievements: ['Ongoing study, graduation expected in August 2026'],
-      gpa: '4.0/4.0 (Current)',
+      achievements: ['Completed. Awaiting graduation'],
+      gpa: '3.99/4.00',
       getdotcolor: 'fuchsia-600',
       volunteering: [
         'Social Volunteer, English Teacher collaborating with myfundaction',
@@ -262,18 +276,25 @@ export const portfolioData: PortfolioData = {
 
   workExperiences: [
     {
+      name: "Data Analyst at Shopee (SPX) Express",
+      desc: "I worked as a Data Analyst under the SPX Express business unit, supporting logistics operations across First Mile, Middle Mile, Last Mile, and non-courier fulfillment processes. My responsibilities involved automating operational reports, maintaining Python and Apps Script workflows, managing nationwide trackers, and resolving cross-functional data issues. During this role, I gained hands-on exposure to operational data engineering, logistics analytics, workflow automation, cloud-based script deployment, and stakeholder coordination in a fast-paced environment.",
+      image: "/spx.jpg",
+      techstack: ["Python", "Data Engineering", "Apps Script", "Deepnote", "Hex", "Scripting & Automation", "Reporting & Analysis", "Data Analytics", "Linux/Bash", "GCP"],
+      link: "https://www.linkedin.com/in/aldenaputra",
+    },
+    {
+      name: "Reporting Analyst Intern at Toyota Astra Financial Services (TAFS)",
+      desc: "I continued my internship at TAFS as a reporting analyst for approximately 3 months. My responsibilities were in the final stage of data engineering & collection, which involved reporting using the Microsoft Power BI platform and DAX. During this extension, I also deepened my understanding of data governance, data security access, semantic modeling, and data reconciliation.",
+      image: "/RATAFS.png",
+      techstack: ["Microsoft Power BI", "Reporting & Analysis", "Data Analytics", "DAX", "Data Reconciliation"],
+      link: "https://www.linkedin.com/in/aldenaputra",
+    },
+    {
       name: "Data Scientist Intern at Toyota Astra Financial Services (TAFS) - MSIB Kampus Merdeka",
       desc: "As an awardee of the MSIB Kampus Merdeka Batch 6, I was part of PT. Astra International Tbk. in the TAFS subsidiary for approximately 5 months. My project revolved around the HR system and the development of data science & analytics for the company's internal operations.",
       image: "/msib.jpg",
       techstack: ["Python", "Jupyter Notebook", "Microsoft Power BI", "Machine Learning", "Data Analytics", "DAX", "Microsoft Excel"],
       link: "https://www.linkedin.com/posts/aldenaputra_astracareer-astrakampusmerdeka-msib6-activity-7163822170203258881-tVzq?utm_source=share&utm_medium=member_desktop",
-    },
-    {
-      name: "Reporting Analyst Intern at Toyota Astra Financial Services (TAFS) - Independent",
-      desc: "I continued my internship at TAFS as a reporting analyst for approximately 2 months. My responsibilities were in the final stage of data engineering & collection, which involved reporting using the Microsoft Power BI platform and DAX. During this extension, I also deepened my understanding of data governance, data security access, semantic modeling, and data reconciliation.",
-      image: "/RATAFS.png",
-      techstack: ["Microsoft Power BI", "Reporting & Analysis", "Data Analytics", "DAX", "Data Reconciliation"],
-      link: "https://www.linkedin.com/in/aldenaputra",
     },
   ],
 

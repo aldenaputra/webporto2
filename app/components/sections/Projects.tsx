@@ -55,6 +55,7 @@ function ProjectCard({ project }: ProjectCardProps) {
             href={project.demoUrl}
             target="_blank"
             rel="noopener noreferrer"
+            variant="outline"
             size="sm"
             className="flex-1"
           >
@@ -66,7 +67,7 @@ function ProjectCard({ project }: ProjectCardProps) {
             href={project.driveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            variant="secondary"
+            variant="outline"
             size="sm"
             className="flex-1"
           >
