@@ -26,17 +26,23 @@ export default function Section({ children, id, className = '', background = 'wh
 interface SectionHeaderProps {
   title: string;
   subtitle?: string;
+  mobileSubtitle?: string;
   className?: string;
 }
 
-export function SectionHeader({ title, subtitle, className = '' }: SectionHeaderProps) {
+export function SectionHeader({ title, subtitle, mobileSubtitle, className = '' }: SectionHeaderProps) {
   return (
     <div className={`text-center mb-12 ${className}`}>
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
         {title}
       </h2>
+      {mobileSubtitle && (
+        <p className="md:hidden text-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          {mobileSubtitle}
+        </p>
+      )}
       {subtitle && (
-        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        <p className={`${mobileSubtitle ? 'hidden md:block' : ''} text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto`}>
           {subtitle}
         </p>
       )}

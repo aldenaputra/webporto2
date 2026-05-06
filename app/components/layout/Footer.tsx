@@ -12,9 +12,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-lg font-semibold mb-4">About This Portfolio</h3>
             <p className="text-gray-300 text-sm leading-relaxed">
-              This portfolio covers my education, projects, and professional experiences, <br/>
-              elaborating my skills and growth in computer science, <br />
-              especially in data and IT security. <br /> <br />
+              This portfolio covers my education, projects, and professional experiences, elaborating my skills and growth in computer science, especially in data and IT security. <br /> <br />
               All information is up-to-date as of {currentMonthName} {currentYear}.
             </p>
           </div>
@@ -104,7 +102,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 dark:border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              {/* © {currentYear} */} Alden Ardiwinata Putra's Portfolio Website
+              {/* © {currentYear} */} Alden Ardiwinata Putra&apos;s Portfolio Website
             </p>
             <p className="text-gray-400 text-sm">
               Built with Next.js & Tailwind CSS

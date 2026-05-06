@@ -50,7 +50,7 @@ export default function Education() {
             Education Journey
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            My learning journey from high school through master's degree.
+            My learning journey from high school through master&apos;s degree.
           </p>
         </div>
         {/* Desktop: Horizontal Timeline */}

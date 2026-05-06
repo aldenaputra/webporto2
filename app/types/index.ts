@@ -1,8 +1,12 @@
 export interface Project {
   id: string;
   title: string;
+  shortTitle?: string;
   description: string;
+  mobileDescription?: string;
+  mobileHighlights?: string[];
   technologies: string[];
+  featuredTechnologies?: string[];
   imageUrl?: string;
   githubUrl?: string;
   demoUrl?: string;
@@ -12,8 +16,12 @@ export interface Project {
 export interface Publication {
   id: string;
   title: string;
+  shortTitle?: string;
   description: string;
+  mobileDescription?: string;
+  mobileMeta?: string;
   technologies: string[];
+  featuredTechnologies?: string[];
   imageUrl?: string;
   githubUrl?: string;
   demoUrl?: string;
@@ -28,6 +36,11 @@ export interface Skill {
 
 export interface SimpleSkill {
   skill: string;
+}
+
+export interface SkillGroup {
+  category: string;
+  skills: string[];
 }
 
 export interface Certification {
@@ -50,9 +63,13 @@ export interface EducationItem {
 
 export interface WorkExperience {
   name: string;
+  shortName?: string;
   desc: string;
+  mobileDesc?: string;
+  mobileHighlights?: string[];
   image: string;
   techstack: string[];
+  featuredTechstack?: string[];
   link: string;
 }
 
@@ -69,8 +86,9 @@ export interface PortfolioData {
   about: {
     bio: string;
     bio2: string;
+    mobileBio?: string;
     skills: Skill[];
-    hardSkills: SimpleSkill[];
+    hardSkills: SkillGroup[];
     softSkills: SimpleSkill[];
     certifications: Certification[];
     cvUrl: string;

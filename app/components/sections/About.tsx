@@ -4,7 +4,7 @@ import Button from '../ui/Button';
 import { portfolioData } from '../../data/portfolioData';
 
 export default function About() {
-  const { about, personal, socialLinks } = portfolioData;
+  const { about, socialLinks } = portfolioData;
 
   return (
     <Section id="about" background="gray">
@@ -19,11 +19,15 @@ export default function About() {
             <CardTitle>Professional Background</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">
+            <p className="text-gray-600 dark:text-gray-300 mb-6 lg:hidden">
+              {about.mobileBio ?? about.bio}
+            </p>
+
+            <p className="hidden lg:block text-gray-600 dark:text-gray-300 mb-4">
               {about.bio}
             </p>
             
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
+            <p className="hidden lg:block text-gray-600 dark:text-gray-300 mb-6">
               {about.bio2}
             </p>
 
@@ -71,14 +75,26 @@ export default function About() {
               <CardTitle>Technical Skills</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-wrap gap-2">
-                {about.hardSkills.map((skill, index) => (
-                  <span
-                    key={index}
-                    className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium"
+              <div className="space-y-5">
+                {about.hardSkills.map((group, index) => (
+                  <div
+                    key={group.category}
+                    className={index > 0 ? 'border-t border-gray-200 dark:border-gray-700 pt-5' : ''}
                   >
-                    {skill.skill}
-                  </span>
+                    <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">
+                      {group.category}
+                    </h4>
+                    <div className="flex flex-wrap gap-2">
+                      {group.skills.map((skill) => (
+                        <span
+                          key={skill}
+                          className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </div>
             </CardContent>
