@@ -85,6 +85,7 @@ export interface PortfolioData {
   };
   about: {
     bio: string;
+    bio1: string;
     bio2: string;
     mobileBio?: string;
     skills: Skill[];
