@@ -57,7 +57,7 @@ export const portfolioData: PortfolioData = {
       { name: "SQL (Advanced) by HackerRank" },
       { name: "SAP Analytics Cloud Training by ASEAN DSE" },
     ],
-    cvUrl: "/CV Alden ATS Mei 2026.pdf",
+    cvUrl: "/CV Alden Ardiwinata Putra 2026.pdf",
     // domainsOfInterest: [
     //   "Data Science",
     //   "Data Analytics",
